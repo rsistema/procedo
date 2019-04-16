@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+
+@import url//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+
+div.main{
+background: #0264d6; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0264d6 1%, #1c2b5a 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#0264d6), color-stop(100%,#1c2b5a)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #0264d6 1%,#1c2b5a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0264d6', endColorstr='#1c2b5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+height:calc(100vh);
+width:100%;
+}
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+* {
+  box-sizing: border-box;
+    margin:0px auto;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+
+}
+
+body {
+  color: #606468;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.appearance-select{
+   border: none;
+   padding: 5px 0px 5px 12px;
+   font-family: 'Open Sans', Arial, sans-serif;
+   font-size: 14px;
+   border-radius: 2px;
+}
+
+.header{
+	//background-image: linear-gradient(to top, #333 , #C0C0C0);
+	padding: 15px;
+}  
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+} 
+ 
+.menu {  	
+	float: right;  	
+	width: 165px;  	
+	background: #6F9;  
+}    
+.contents {  	
+	float: left;  	
+	width: 440px;  	
+	background: #9FC;  	
+	margin: 0 0 0 20px;  
+}    
+.footer {  	
+	clear: both;  	
+	background: #FF9;  
+} 
+
+#tabs{
+	width: 90%;
+	height: 90%;
+}
+
+/* GROUP INPUT */
+.btn-group input {
+  background-color: #6495ED; /* Green background */
+  border: 1px solid #6495ED; /* Green border */
+  color: white; /* White text */
+  padding: 5px 15px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: inline-block;
+  border-radius: 25px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group input:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group input:hover {
+  background-color: #2F4F4F;
+}
+
+hr.new5 {
+  border: 10px solid white;
+  border-radius: 5px;
+}
+
+/* TABELA */
+
+.tabela {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabela td, .tabela th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+.tabela tr:nth-child(even){background-color: #f2f2f2;}
+
+.tabela tr:hover {background-color: #ddd;}
+
+.tabela th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #6495ED;
+  color: white;
+}
+
+/*  BOTAO SAIR */
+.sair {
+  background-color: #6495ED; /* Green background */
+  border: 1px solid #6495ED; /* Green border */
+  color: white;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.sair:hover {
+  background-color: #2F4F4F;
+}
+
+/* BOTOES DO MENU SUPERIOR */
+.menubotao {
+  background-color: #6495ED; /* Green background */
+  border: 1px solid #6495ED; /* Green border */
+  color: white; /* White text */
+  padding: 5px 15px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: inline-block;
+  border-radius: 25px;
+}
+.menubotao:hover {
+  background-color: #2F4F4F;
+}
